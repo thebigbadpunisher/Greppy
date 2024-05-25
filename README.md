@@ -1,5 +1,4 @@
 # Greppy
-
 Greppy is a Python tool for extracting URL parameters and paths from a list of URLs. It can also perform advanced parameter discovery by scraping HTML input tag names and JavaScript variable names from the URLs. The extracted information can be used for fuzzing and security testing.
 
 ## Features
@@ -24,6 +23,10 @@ Greppy is a Python tool for extracting URL parameters and paths from a list of U
 3. Install the required Python packages:
     ```sh
     pip install -r requirements.txt
+    ```
+4. Give executable permissions:
+    ```sh
+    chmod +x greppy.py
     ```
 
 ## Usage
