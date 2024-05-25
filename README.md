@@ -42,3 +42,6 @@ optional arguments:
                         Path to the output file for extracted items.
   -O, --Output          Flag to indicate output directory mode.
   --info                Flag to include detailed information in the output.
+```
+
+
