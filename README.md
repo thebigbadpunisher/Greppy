@@ -44,4 +44,52 @@ optional arguments:
   --info                Flag to include detailed information in the output.
 ```
 
+## Examples:
 
+### Extracting Parameters: 
+
+#### From a File
+To extract parameters from a list of URLs stored in a file (`urls.txt`):
+`python greppy.py -u urls.txt -p`
+
+#### From Standard Input
+To extract parameters from a list of URLs provided through standard input:
+`cat urls.txt | python greppy.py -u- -p`
+
+### Extracting Directories: 
+
+#### From a File
+To extract directories from a list of URLs stored in a file (`urls.txt`):
+`python greppy.py -u urls.txt -d`
+
+#### From Standard Input
+To extract directories from a list of URLs provided through standard input:
+`cat urls.txt | python greppy.py -u- -d`
+
+### Extracting Parameters and Directories with Detailed Information: 
+
+#### From a File
+To extract both parameters and directories from a list of URLs stored in a file (`urls.txt`) and include detailed information:
+`python greppy.py -u urls.txt -p -d --info`
+
+#### From Standard Input
+To extract both parameters and directories from a list of URLs provided through standard input and include detailed information:
+`cat urls.txt | python greppy.py -u- -p -d --info`
+
+### Writing Output to a File: 
+
+#### Extracting Parameters and Saving to `output.txt`
+To extract parameters and save the results to `output.txt`:
+`python greppy.py -u urls.txt -p -o output.txt`
+
+#### Extracting Directories and Saving to `directories.txt`
+To extract directories and save the results to `directories.txt`:
+`python greppy.py -u urls.txt -d -o directories.txt`
+
+#### Extracting Parameters and Directories with Detailed Information and Saving to `output.txt`
+To extract both parameters and directories, include detailed information, and save the results to `output.txt`:
+`python greppy.py -u urls.txt -pd --info -o output.txt`
+
+#### Writing Output to Separate Files Using -O
+To extract parameters and directories and write them to separate files (parameters.txt and directories.txt):
+`python greppy.py -u urls.txt -p -d -O`
